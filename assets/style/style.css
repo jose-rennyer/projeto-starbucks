@@ -87,12 +87,38 @@ h1{
 }
 .header-menu{
     margin-left:60px;
+    margin-right:30px;
     cursor:pointer;
 }
 .header-menu img{
     width:26px;
     height:26px;
 }
+nav ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+    background-color:rgba(000,000,000, 0.9);
+    width:0vw;
+    height:100vh;
+    right:0;
+    top:0;
+    position:fixed;
+    transition:0.4s all linear
+}
+nav li{
+    padding:10px;
+    font-size:30px;
+    font-weight:bold;
+    color:#006341;
+    height:50px;
+    border-bottom:3px solid transparent;
+    cursor:pointer;
+}
+nav .lin:hover{
+    border-bottom:3px solid #006341;
+}
+
 
 .banner{
     background-image:url(../img/bg.jpg);
@@ -246,6 +272,10 @@ footer a:hover{
     .area4-content{
         padding:70px;
     }
+    nav li{
+        font-size:30px;
+        height:50px;
+    }
 }
 @media (min-width:426px) and (max-width:768px){
     .container{
@@ -270,6 +300,10 @@ footer a:hover{
     .area-3{
         display:grid;
         grid-template-columns:2fr 1fr
+    }
+    nav li{
+        font-size:25px;
+        height:50px;
     }
 }
 
@@ -319,5 +353,9 @@ footer a:hover{
     }
     footer{
         line-height:30px;
+    }
+    nav li{
+        font-size:25px;
+        height:40px;
     }
 }
